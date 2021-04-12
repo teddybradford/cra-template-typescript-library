@@ -1,0 +1,36 @@
+{
+  "package": {
+    "main": "build/static/js/main.js",
+    "dependencies": {
+      "@craco/craco": "^6.1.1",
+      "@testing-library/jest-dom": "^5.11.4",
+      "@testing-library/react": "^11.1.0",
+      "@testing-library/user-event": "^12.1.10",
+      "@types/jest": "^26.0.15",
+      "@types/node": "^12.0.0",
+      "@types/react": "^17.0.0",
+      "@types/react-dom": "^17.0.0",
+      "eslint-config-prettier": "^8.1.0",
+      "prettier": "2.2.1",
+      "stylelint": "^13.12.0",
+      "stylelint-config-prettier": "^8.0.2",
+      "stylelint-config-standard": "^21.0.0",
+      "typescript": "^4.1.2"
+    },
+    "scripts": {
+      "start": "craco start",
+      "build": "craco build",
+      "test": "craco test",
+      "eject": "echo \"Error: eject is blocked because craco is installed\" && exit 1"
+    },
+    "eslintConfig": {
+      "extends": ["react-app", "react-app/jest", "prettier"]
+    },
+    "stylelint": {
+      "extends": ["stylelint-config-standard", "stylelint-config-prettier"]
+    },
+    "prettier": {
+      "singleQuote": true
+    }
+  }
+}
